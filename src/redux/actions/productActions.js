@@ -31,9 +31,8 @@ export const getProductDetails = (id) => async (dispatch) => {
 
     //const { data } = await axios.get(`/api/products/${id}`);
     const { data } = await axios.get(
-      process.env.API_URL + `/api/products${id}`
+      `https://aguadeira-server.herokuapp.com/api/products/${id}`
     );
-
     dispatch({
       type: actionTypes.GET_PRODUCT_DETAILS_SUCCESS,
       payload: data,
