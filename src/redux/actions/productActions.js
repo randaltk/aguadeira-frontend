@@ -6,7 +6,9 @@ export const getProducts = () => async (dispatch) => {
     dispatch({ type: actionTypes.GET_PRODUCTS_REQUEST });
 
     //const { data } = await axios.get("/api/products");
-    const { data } = await axios.get(process.env.API_URL + "/api/products");
+    const { data } = await axios.get(
+      "https://aguadeira-server.herokuapp.com/api/products"
+    );
 
     dispatch({
       type: actionTypes.GET_PRODUCTS_SUCCESS,
