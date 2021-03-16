@@ -3,10 +3,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 1rem;
+  padding: 2rem ;
   z-index: 50;
   margin-left: 2rem;
-  margin-top: 2rem;
+ 
   
 }
 
@@ -21,7 +21,7 @@
 
 
 .navbar__links > li {
-  padding-left: 5.5rem;
+padding: 0.5rem;
   
 }
  
@@ -99,6 +99,10 @@
 
   .hamburger__menu {
     display: flex;
+    margin-left: 12rem;
+  }
+  .flex__mobile {
+    display: flex;
   }
 }
 
@@ -108,7 +112,8 @@
   }
 
   .hamburger__menu {
-    margin:0 auto;
+    margin:0 auto
+
   }
 .flex__mobile {
   display: flex;
